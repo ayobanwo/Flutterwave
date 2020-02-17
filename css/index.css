@@ -1,28 +1,33 @@
 body{
 	margin: 0;
-	font-family: humnst777 Lt BT;
+	padding: 0;
+	font-family: candara;
 }
-.container{
+.wrapper{
 	padding: 35px 7%;
 }
-nav{
+header{
 	background-color: #dadef5;
+}
+nav{
+	padding-bottom: 60px;
 }
 .logo{
 	height: 35px;
 	width: 200px;
 }
-ul{
+.nav-ul{
 	display: inline;
 	float: right;
+	margin-right: -20px;
 	margin-top: -2px;
 }
-li{
+.nav-li{
 	display: inline;
 	color: #333333;
 	margin: auto 20px;
 }
-.navCreateButton{
+.nav-button{
 	background-color: #f5a623;
 	color: white;
 	border: none;
@@ -30,21 +35,42 @@ li{
 	border-radius: 5px;
 	font-size: 0.75em;
 }
-header{
-	background-color: #dadef5;
-	display: grid;
-	grid-template-columns: 1.7fr 2fr;
-	font-size: 180%;
-	justify-items: end;
-}
-.headerCreateButton{
+.create-button{
 	background-color: #f5a623;
 	color: white;
 	border: none;
 	padding:15px;
 	border-radius: 5px;
 }
-.speak{
+.head-div{
+	display: grid;
+	grid-template-columns: 1.5fr 2fr;
+	font-size: 160%;
+	grid-gap: 50px;
+}
+.header-img-topdiv, .header-img-bottomdiv{
+	float: right;
+	margin: 5px auto;
+}
+.head-img1{
+	height: 230px;
+	width: 230px;
+}
+.head-img2{
+	height: 300px;
+	width: 230px;
+	margin-left: 15px;
+}
+.head-img3{
+	height: 200px;
+	width: 48.5%;
+}
+.head-img4{
+	height: 200px;
+	width: 48.5%;
+	margin-left: 10px;
+}
+.speak-button{
 	color: #202a3c;
 	border: none;
 	padding: 15px;
@@ -52,78 +78,64 @@ header{
 	background-color: white;
 	box-shadow: 0 2px 3px 0 #ccc;
 }
-header>div>img{
-	width: 40%;
-	padding: 10px;
+.create-div{
+	background-color: #f4f6f8;	
 }
-.headimg2{
-	width: 45%;
-	height: 210px;
-	border-radius: 15px;
-}
-.headimg1{
-	margin-left: 30%;
-}
-.imgreduce{
-	height: 30%;
-	width: 30%;
-}
-.createSeamless{
+.create-heading{
 	font-family: Arial Rounded MT;
 	color: #0f1c70;
 	text-align: center;
 	font-size: 2em;
-	padding: 100px;
-	background-color: #f4f6f8;
+	padding: 80px;
+	margin: 0;
 }
-.section1{
-	background-color: #f4f6f8;
+.apay-div{
 	color: #333333;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 60px;
 	line-height: 40px;
 }
-.acceptPay{
+.div-main-heading{
 	font-family: Arial Rounded MT;
 	font-size: 120%;
 	font-size: 2.5em;
 	line-height: 50px;
 	margin-top: 0;
 }
-.acceptPayImg{
+.accept-img{
 	width: 90%;
 	height: 100%;
-	border-radius: 5px;
+	border-radius: 8px;
 }
-.subSection1{
+.online-pos-div{
 	color: #333333;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 60px;
 }
-.subSection1a{
+.pay-opt{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
 .subSection1a>div>i{
 	margin-right: 5px;
 }
-.section1Haeding{
+.online-pos-heading{
 	color: #0f1c70;
 	font-weight: bolder;
 }
-.section2, .section3{
+.issue-card-div, .safety-div{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 60px;
 	padding-top: 80px;
 	line-height: 25px;
 }
-.section2P{
+.create-card-p{
 	font-size: 1.3em;
 }
-.learnMore{
+.learn-more-link{
 	color: #f5a623;
 	text-decoration: underline;
 	font-weight: bold;
@@ -134,20 +146,33 @@ video{
 	height: 70%;
 	object-fit: contain;
 }
+
+.safety-div{
+	background-color: #f4f6f8
+}
+.safety-p{
+	font-size: 150%;
+	line-height: 30px;
+}
 .section3{	
 	background-color: #f4f6f8;
 }
-.footerSection{
+
+footer{
+	padding: 1%;
+
+}
+.footer-section{
 	text-align: center;	
 	margin: 50px auto;
 }
-.footerHeading{
+.footer-heading{
 	font-family: Arial Rounded MT;
 	font-size: 120%;
 	font-size: 2.5em;
 	margin-top: 0;
 }
-.footerGrid1{
+.footer-grid{
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 50px;
@@ -166,8 +191,63 @@ video{
 .address{
 	line-height: 20px;
 }
-.footerGrid2{
+.footer-sm-grid{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 5fr;
 	padding: 20px;
+}
+.foot-ul{
+	display: inline;
+	float: right;
+}
+.foot-li{
+	display: inline;
+	margin-left: 30px;
+}
+.soln-li, .comp-li, .legal-li, .lag-li, .dev-li, .learn-li{
+	list-style: none;
+}
+.soln-ul, .comp-ul, .legal-ul, .lag-ul, .dev-ul, .learn-ul{
+	padding: 0;
+	margin: 0;
+}	
+
+
+@media (max-width: 1350px){
+	body{
+		color: red;
+	}
+	.wrapper{
+		padding: 35px 4%;
+	}
+	footer{
+		font-size: 80%;
+	}
+	.footer-grid{
+		grid-gap: 20px;
+	}
+	.apay-div{
+		grid-gap: 20px;
+	}
+	.accept-img{
+		height: 80%;
+	}
+}
+
+@media (max-width: 1000px){
+	body{
+		color: blue;
+	}
+	.footer-grid{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.head-div, .apay-div, .issue-card-div, .safety-div{
+		display: block;
+	}
+}
+
+@media (max-width: 800px){
+	.footer-grid, .footer-sm-grid{
+		display: block;
+	}
 }
