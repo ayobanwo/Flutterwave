@@ -216,9 +216,6 @@ footer{
 
 
 @media (max-width: 1350px){
-	body{
-		color: red;
-	}
 	.wrapper{
 		padding: 35px 4%;
 	}
@@ -253,9 +250,6 @@ footer{
 }
 
 @media (max-width: 1000px){
-	body{
-		color: blue;
-	}
 	.footer-grid{
 		grid-template-columns: 1fr 1fr 1fr;
 	}
