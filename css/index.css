@@ -121,6 +121,9 @@ nav{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
+.pay-opt-li{
+	list-style: none;
+}
 .subSection1a>div>i{
 	margin-right: 5px;
 }
@@ -246,6 +249,10 @@ footer{
 	.accept-img{
 		height: 80%;
 	}
+	.logo{
+		width: 150px;
+		height: 30px;
+	}
 
 }
 
@@ -272,6 +279,16 @@ footer{
 		height: 60%;
 		width: 45%;
 	}
+	.nav-ul{
+		display: block;
+		float: none;
+		padding: 0;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.nav-li{
+		margin: 5px 1%;
+	}
 }
 
 @media (max-width: 800px){
@@ -293,5 +310,14 @@ footer{
 	}
 	.create-heading{
 		font-size: 150%;
+	}
+	.nav-button{
+		margin-top: 10px;
+	}
+	nav.wrapper{
+		padding-bottom: 0; 
+	}
+	.head-div.wrapper{
+		padding-top: 0;
 	}
 }
