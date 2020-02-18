@@ -49,8 +49,10 @@ nav{
 	grid-gap: 50px;
 }
 .header-img-topdiv, .header-img-bottomdiv{
-	float: right;
 	margin: 5px auto;
+}
+.header-img-topdiv, .header-img-bottomdiv{
+	text-align: right;
 }
 .head-img1{
 	height: 230px;
@@ -69,6 +71,7 @@ nav{
 	height: 200px;
 	width: 48.5%;
 	margin-left: 10px;
+	border-radius: 6px;
 }
 .speak-button{
 	color: #202a3c;
@@ -194,11 +197,10 @@ footer{
 .footer-sm-grid{
 	display: grid;
 	grid-template-columns: 1fr 5fr;
-	padding: 20px;
 }
 .foot-ul{
-	display: inline;
-	float: right;
+	display: flex;
+	justify-content: flex-end;
 }
 .foot-li{
 	display: inline;
@@ -207,7 +209,7 @@ footer{
 .soln-li, .comp-li, .legal-li, .lag-li, .dev-li, .learn-li{
 	list-style: none;
 }
-.soln-ul, .comp-ul, .legal-ul, .lag-ul, .dev-ul, .learn-ul{
+.soln-ul, .comp-ul, .legal-ul, .lag-ul, .dev-ul, .learn-ul, .foot-ul{
 	padding: 0;
 	margin: 0;
 }	
@@ -219,6 +221,21 @@ footer{
 	}
 	.wrapper{
 		padding: 35px 4%;
+	}
+	nav{
+		font-size: 80%;
+	}
+	.head-img1{
+		height: 150px;
+		width: 150px;
+	}
+	.head-img2{
+		height:200px;
+		width: 160px;
+	}
+	.head-img3, .head-img4{
+		height: 150px;
+		width: 40%;
 	}
 	footer{
 		font-size: 80%;
@@ -232,6 +249,7 @@ footer{
 	.accept-img{
 		height: 80%;
 	}
+
 }
 
 @media (max-width: 1000px){
@@ -244,10 +262,42 @@ footer{
 	.head-div, .apay-div, .issue-card-div, .safety-div{
 		display: block;
 	}
+	.head-img1{
+		height: 30%;
+		width: 30%;
+	}
+	.head-img2{
+		height:60%;
+		width: 32%;
+	}
+	.head-img3{
+		height: 10%;
+		width: 45%;
+	}
+	.head-img4{
+		height: 60%;
+		width: 45%;
+	}
 }
 
 @media (max-width: 800px){
-	.footer-grid, .footer-sm-grid{
+	footer{
+		font-size: 110%;
+	}
+	.footer-grid, .footer-sm-grid, .foot-li, .foot-ul{
 		display: block;
+	}
+	.foot-li, .foot-ul{
+		margin: 0;
+		padding: 0;
+	}
+	.apay-img-div{
+		text-align: center;
+	}
+	.div-main-heading{
+		font-size: 150%;
+	}
+	.create-heading{
+		font-size: 150%;
 	}
 }
