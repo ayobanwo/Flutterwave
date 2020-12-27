@@ -22,6 +22,10 @@ nav{
 	margin-right: -20px;
 	margin-top: -2px;
 }
+.gradient-2 {
+    background-image:url(../images/diamond.png);
+     background-blend-mode: multiply;
+}
 .nav-li{
 	display: inline;
 	color: #333333;
